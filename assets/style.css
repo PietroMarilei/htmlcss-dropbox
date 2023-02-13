@@ -40,6 +40,9 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.wrap {
     flex-wrap: wrap;
 }
 
@@ -186,12 +189,21 @@ header {
     background-color: var(--light-blue);
 }
 
-.jumbo-text col-4 p {
-    display: inline-block;
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 1000;
+    padding: 3rem 0;
 }
 
-#jumbo-img {
-    width: 70%;
+/* ------------------------------------ */
+
+.jumbo-text .col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.jumbo-text .col-8 {
+    width: calc(100% / 12 * 8);
+    ;
 }
 
 /* #endregion jumbotron*/
