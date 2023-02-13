@@ -251,22 +251,19 @@ header {
     margin-bottom: 3rem;
 }
 
-/* #region table */
 .col-4 {
     width: calc(100% / 12 * 4);
-    padding: 0 1rem;
+    margin: 0 1 0rem;
 }
 
-table {
-    border: 2px solid rgb(185, 185, 185);
-    height: 900px;
-}
-
-th {
-    border-bottom: 2px solid rgb(211, 211, 211);
+.col-12 {
     width: 100%;
 }
 
-/* #endregion table */
+/* #region card */
+
+
+
+/* #endregion card */
 
 /* #endregion business-plans*/
