@@ -227,7 +227,7 @@ header {
 
 }
 
-/* ---------------------------------------------------barra bianca sotto img jumbo */
+/* ---------------------------------------------------barra bianca sotto img jumbo probabilmente basta spostare la section sopra in giú con position abs*/
 #white-row {
     background-color: var(--white);
     border: 2px dotted;
@@ -239,3 +239,16 @@ header {
 }
 
 /* #endregion jumbotron*/
+
+/* #region business-plans*/
+.business-plans h2 {
+    padding: 0 0 2.5rem 0;
+}
+
+.business-plans label {
+    display: inline-block;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* #endregion business-plans*/
