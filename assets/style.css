@@ -37,6 +37,7 @@ a {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: small;
 }
 
 .d-flex {
@@ -271,21 +272,63 @@ header {
 .card-head {
     justify-content: center;
     border: 2px solid var(--grey);
+    padding: 0.5rem 0;
 }
 
 .card-body {
     justify-content: center;
     border: 2px solid var(--grey);
+    border-top: 0px;
 }
 
 .card-container {
     padding: 0 2rem;
 }
 
+/* ---------------------------tutte le regole del plan */
 .card-body h3 {
     font-size: 24px;
+    padding: 2rem 0;
 }
 
+.plan-price h4 {
+    padding: 2rem 0 0.5rem 0;
+}
+
+.recurrency {
+    font-size: 14px;
+    color: grey;
+    padding-bottom: 1rem;
+}
+
+.plan-details>* {
+    padding: 1rem 0 0 0;
+}
+
+.free-trial-btn button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    margin: 2rem 0;
+}
+
+.buy-now {
+    padding-bottom: 2rem;
+}
+
+.buy-now a {
+    color: #0061ff;
+    text-decoration: underline;
+}
+
+#card-small-hr {
+    display: inline-block;
+    width: 50px;
+    margin-left: 2rem;
+    border: 1px solid;
+}
 
 /* #endregion card */
 
