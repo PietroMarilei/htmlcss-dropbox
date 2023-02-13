@@ -3,10 +3,19 @@
 
 /* #region reset*/
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+    ;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* #endregion reset*/
@@ -42,6 +51,10 @@ body {
 .container {
     width: 70%;
     margin: auto;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* #endregion utilities*/
@@ -130,3 +143,55 @@ body {
 }
 
 /* #endregion debug*/
+
+/* #region header*/
+.header-left ul {
+    justify-content: ;
+    align-items: center;
+}
+
+.header-left li {
+    padding: 1rem;
+    font-size: small;
+}
+
+/* ---------------------------------------- header left */
+header {
+    justify-content: space-between;
+    /* position: fixed;
+    width: 100%;
+    height: 50px; */
+    /* ----------------------------------------------------------------------------------manca da aggiungere position absolute */
+}
+
+.header-right ul {
+    align-items: center;
+}
+
+.header-right li {
+    padding: 1rem;
+    font-size: small;
+}
+
+#start-btn {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+}
+
+/* #endregion header*/
+
+/* #region jumbotron*/
+.jumbotron {
+    background-color: var(--light-blue);
+}
+
+.jumbo-text col-4 p {
+    display: inline-block;
+}
+
+#jumbo-img {
+    width: 70%;
+}
+
+/* #endregion jumbotron*/
