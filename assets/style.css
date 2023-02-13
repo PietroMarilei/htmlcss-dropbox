@@ -11,6 +11,84 @@
 
 /* #endregion reset*/
 
-/* #region debug*/
+/* #region utilities*/
+:root {
+    --white: #ffffff;
+    --light-blue: #b4d0e7;
+    --blue: #0061ff;
+    --dark-blue: #0d2481;
+    --turquise: #0093ce;
+    --light-green: #a2d39b;
+    --very-light-green: #d1e9cd;
+    --purple-red: #61082b;
+    --red: #ff1c1c;
+    -yellow: #ffd830;
+}
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.large-container {
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+/* #endregion utilities*/
+
+/* #region debug*/
+.debug .header-left {
+    background-color: orange;
+    border: 2px dotted;
+    width: 50%;
+    height: 50px;
+}
+
+.debug .header-right {
+    background-color: orange;
+    border: 2px dotted;
+    width: 50%;
+    height: 50px;
+}
+
+/* --------------------------------------------- */
+.debug .jumbotron {
+    background-color: var(--light-blue);
+    border: 2px dotted;
+    width: 100%;
+    height: 770px
+}
+
+.debug .col-4 {
+    background-color: #ff1c1c;
+    border: 2px dotted;
+    width: calc(100% / 12 * 4);
+    height: 770px
+}
+
+.debug .col-12 {
+    background-color: #ff1ce8;
+    border: 2px dotted;
+    width: calc(100% / 12 * 12);
+    height: 480px
+}
+
+.debug .small-card {
+    background-color: #f7ff1c;
+    border: 2px dotted;
+    width: calc(100% / 12 * 4);
+    height: 580px;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------------------come si mandano a capo ? */
 /* #endregion debug*/
