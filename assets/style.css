@@ -31,6 +31,7 @@ body {
 
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .large-container {
@@ -86,9 +87,23 @@ body {
     background-color: #f7ff1c;
     border: 2px dotted;
     width: calc(100% / 12 * 4);
+    /* ----------------------------------------con questa misura non vanno a capo  se allarga il viewport*/
     height: 580px;
-    flex-wrap: wrap;
+
 }
 
-/* ------------------------------------------------come si mandano a capo ? */
+.debug .many-teams {
+    background-color: #491cff;
+    border: 2px dotted;
+    width: calc(100% / 12 * 12);
+    height: 480px
+}
+
+.debug .partnerships {
+    background-color: #ff1c1c;
+    border: 2px dotted;
+    width: 100%;
+    height: 480px
+}
+
 /* #endregion debug*/
