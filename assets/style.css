@@ -161,10 +161,11 @@ img {
 /* ---------------------------------------- header left */
 header {
     justify-content: space-between;
-    /* position: fixed;
+    background-color: var(--white);
+    position: fixed;
     width: 100%;
-    height: 50px; */
-    /* ----------------------------------------------------------------------------------manca da aggiungere position absolute */
+    height: 50px;
+    /* ----------------------------------------------------------------------------------c'é uno strano margine sopra  */
 }
 
 .header-right ul {
@@ -192,11 +193,10 @@ header {
 .jumbotron h1 {
     font-size: 3rem;
     font-weight: 1000;
-    padding: 3rem 0;
+    padding: 6rem 0 3rem 0;
 }
 
 /* ------------------------------------ */
-
 .jumbo-text .col-4 {
     width: calc(100% / 12 * 4);
 }
@@ -204,6 +204,38 @@ header {
 .jumbo-text .col-8 {
     width: calc(100% / 12 * 8);
     ;
+}
+
+.jumbo-text img {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbo-text button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    margin: 2rem 0;
+}
+
+.jumbo-text i {
+    margin: 2rem 0 1rem 0;
+    position: relative;
+    z-index: 1;
+
+}
+
+/* ---------------------------------------------------barra bianca sotto img jumbo */
+#white-row {
+    background-color: var(--white);
+    border: 2px dotted;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    left: 0;
 }
 
 /* #endregion jumbotron*/
