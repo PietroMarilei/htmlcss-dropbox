@@ -269,6 +269,7 @@ header {
 }
 
 /* #region card */
+
 .card-head {
     justify-content: center;
     border: 2px solid var(--grey);
@@ -327,7 +328,34 @@ header {
     display: inline-block;
     width: 50px;
     margin-left: 2rem;
-    border: 1px solid;
+    border: 0px;
+    border-top: 2px solid var(--grey);
+    padding-bottom: 2rem;
+}
+
+.plan-resume>* {
+    padding-bottom: 2rem;
+}
+
+.plan-resume ul {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+}
+
+.plan-resume li {
+    padding-left: var(--icon-space);
+    padding-bottom: 1rem;
+}
+
+.plan-resume li:before {
+    content: "\f00c";
+    color: var(--blue);
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc(var(--icon-space) * -1);
+    width: var(--icon-space);
+    /* grazie stack overflow */
 }
 
 /* #endregion card */
