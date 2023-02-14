@@ -460,7 +460,15 @@ header {
 /* #endregion operation-business */
 
 /* #region many-teams */
+.many-teams h2 {
+    font-size: 26px;
+    padding: 2rem 0;
+}
 
+.many-teams a {
+    text-decoration: underline;
+    color: blue;
+}
 
 
 /* #endregion many-teams */
