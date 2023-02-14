@@ -32,7 +32,7 @@ a {
     --very-light-green: #d1e9cd;
     --purple-red: #61082b;
     --red: #ff1c1c;
-    -yellow: #ffd830;
+    --yellow: #ffd830;
 }
 
 body {
@@ -71,7 +71,7 @@ img {
 /* ----------------------------------------regole row and col-4 col-12 */
 .row {
     justify-content: space-between;
-    padding-bottom: 3rem;
+    padding: 2rem 0;
 }
 
 .col-4-cards {
@@ -473,33 +473,50 @@ header {
 /* #endregion many-teams */
 
 /* #region partnerships-area*/
-.partnerships-area {}
+.partnerships-area {
+    justify-content: center;
+
+}
 
 .left-logos {
     max-width: 440px;
 }
 
 .center-logo {
-    flex-grow: 1;
+    padding: 2rem;
+    max-width: calc(100% - 880px);
+    max-height: calc(100% - 880px);
 }
 
 .right-logos {
-    max-width: 440px;
+    width: 440px;
 }
 
 .small-box {
-    min-height: 220px;
-    min-width: 220px;
+    height: 220px;
+    width: 220px;
+    /* ------------- allieano le img all'interno */
+    justify-content: center;
+    align-items: center;
 }
 
 .center-logo {
-    background-color: var(--grey);
+    background-color: var(--light-grey);
+}
+
+.partnerships-area img {
+    filter: invert();
+    width: 50%;
 }
 
 /* vari loghi */
 .designit {
     background-color: var(--light-green);
+    border: 10px solid var(--very-light-green);
+    justify-content: center;
+    align-items: center;
 }
+
 
 .asu {
     background-color: var(--purple-red);
@@ -511,6 +528,41 @@ header {
 
 .topps {
     background-color: var(--red);
+}
+
+/* --------- */
+.bycicle {
+    background-color: var(--red);
+}
+
+.heart {
+    background-color: var(--light-blue);
+}
+
+.lonely {
+    background-color: var(--dark-blue);
+}
+
+.clear {
+    background-color: var(--yellow);
+}
+
+#center-logo {
+    filter: invert(0);
+    /* una rubata */
+    width: 35%;
+    padding-bottom: 1rem;
+}
+
+#logo-hr {
+    display: block;
+    width: 90px;
+    border: 0px;
+    border-top: 2px solid var(--grey);
+}
+
+.center-logo p {
+    padding: 2rem 0;
 }
 
 /* #endregion partnerships-area*/
