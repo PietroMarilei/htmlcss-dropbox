@@ -566,3 +566,29 @@ header {
 }
 
 /* #endregion partnerships-area*/
+
+/* #region bring */
+.bring {
+    background-color: var(--light-blue);
+}
+
+.bring .container {
+    justify-content: space-between;
+    padding: 5rem 0;
+    align-items: center;
+}
+
+.bring h2 {
+    color: var(--purple-red);
+    font-size: 24px;
+}
+
+.bring button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--white);
+    padding: 0.4rem 2rem;
+    margin: 2rem 0;
+}
+
+/* #endregion bring */
