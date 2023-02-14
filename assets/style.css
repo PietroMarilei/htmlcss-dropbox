@@ -68,6 +68,20 @@ img {
 }
 
 /* #endregion utilities*/
+/* ----------------------------------------regole row and col-4 col-12 */
+.row {
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.col-4 {
+    width: calc((100% / 12 * 4) - 2rem);
+}
+
+.col-12 {
+    width: 100%;
+
+}
 
 /* #region debug*/
 .debug .header-left {
@@ -258,22 +272,13 @@ header {
     margin-bottom: 3rem;
 }
 
-.col-4 {
-    width: calc(100% / 12 * 4);
-    padding-right: 2rem;
 
-}
-
-.col-12 {
-    width: 100%;
-}
 
 /* #region card */
-.card {
+.card-border {
     border: 2px solid var(--grey);
     height: 100%;
     /* questo fa arrivare tutte le colonne allo stesso livello */
-
 
 }
 
@@ -285,23 +290,20 @@ header {
 
 .card-body {
     justify-content: center;
-
-
-
-
 }
 
 .card-container {
     padding: 0 2rem;
 }
 
+/* #region plan details */
 /* ---------------------------tutte le regole del plan */
 .card-body h3 {
     font-size: 24px;
     padding: 2rem 0;
 }
 
-/* #region plan details */
+
 .plan-price h4 {
     padding: 2rem 0 0.5rem 0;
 }
@@ -374,10 +376,37 @@ header {
 }
 
 /* #endregion plan details */
-.col-12 p {
+/* #region -------------------large card */
+.card-large {
     margin-top: 3rem;
 }
+
+.plan-title {
+    justify-content: space-between;
+}
+
+.plan-title button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    margin: 2rem 0;
+}
+
+.enterprise-large-details p {
+    padding-top: 2rem;
+}
+
+/* #endregion ----------------large card */
 
 /* #endregion card */
 
 /* #endregion business-plans*/
+
+/* #region contact-us */
+.contact-us img {
+    width: (100%/12 * 2);
+}
+
+/* #endregion contact-us */
