@@ -473,24 +473,24 @@ header {
 /* #endregion many-teams */
 
 /* #region partnerships-area*/
-.partnerships-area {
-    justify-content: space-between;
-}
+.partnerships-area {}
 
 .left-logos {
-    width: 500px;
+    max-width: 220px;
 
 }
 
 .center-logo {
-    /* flex-grow: 1; */
+    flex-grow: 1;
 }
 
-.right-logos {}
+.right-logos {
+    max-width: 220px;
+}
 
 .small-box {
-    min-height: 220px;
-    min-width: 220px;
+    min-height: 110px;
+    min-width: 110px;
 }
 
 .center-logo {
