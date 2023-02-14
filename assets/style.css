@@ -476,8 +476,7 @@ header {
 .partnerships-area {}
 
 .left-logos {
-    max-width: 220px;
-
+    max-width: 440px;
 }
 
 .center-logo {
@@ -485,12 +484,12 @@ header {
 }
 
 .right-logos {
-    max-width: 220px;
+    max-width: 440px;
 }
 
 .small-box {
-    min-height: 110px;
-    min-width: 110px;
+    min-height: 220px;
+    min-width: 220px;
 }
 
 .center-logo {
