@@ -27,7 +27,7 @@ a {
     --light-blue: #b4d0e7;
     --blue: #0061ff;
     --dark-blue: #0d2481;
-    --turquise: #0093ce;
+    --turquoise: #0093ce;
     --light-green: #a2d39b;
     --very-light-green: #d1e9cd;
     --purple-red: #61082b;
@@ -470,5 +470,48 @@ header {
     color: blue;
 }
 
-
 /* #endregion many-teams */
+
+/* #region partnerships-area*/
+.partnerships-area {
+    justify-content: space-between;
+}
+
+.left-logos {
+    width: 500px;
+
+}
+
+.center-logo {
+    /* flex-grow: 1; */
+}
+
+.right-logos {}
+
+.small-box {
+    min-height: 220px;
+    min-width: 220px;
+}
+
+.center-logo {
+    background-color: var(--grey);
+}
+
+/* vari loghi */
+.designit {
+    background-color: var(--light-green);
+}
+
+.asu {
+    background-color: var(--purple-red);
+}
+
+.florida {
+    background-color: var(--turquoise);
+}
+
+.topps {
+    background-color: var(--red);
+}
+
+/* #endregion partnerships-area*/
