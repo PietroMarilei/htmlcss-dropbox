@@ -619,6 +619,37 @@ header {
 footer {
     background-color: black;
     color: white;
+    padding-top: 2rem;
+}
+
+.footer-row {
+    justify-content: space-between;
+}
+
+.footer-row h3 {
+    padding: 2rem 0;
+}
+
+.footer-row li {
+    padding: 0.5rem 0;
+    color: var(--grey);
+}
+
+
+.lan-selector {
+    padding: 2rem 0;
+}
+
+.lan-selector span {
+    padding: 0 10px 0 3px;
+}
+
+.lan-selector hr {
+    margin-right: 90%;
+    width: 50px;
+    border: 0px;
+    border-top: 2px solid rgb(82, 82, 82);
+    margin-bottom: 1rem;
 }
 
 /* #endregion footer */
