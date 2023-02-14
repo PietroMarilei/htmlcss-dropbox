@@ -74,14 +74,25 @@ img {
     padding-bottom: 3rem;
 }
 
-.col-4 {
+.col-4-cards {
     width: calc((100% / 12 * 4) - 2rem);
 }
 
 .col-12 {
     width: 100%;
-
 }
+
+/* ---------------------------------perché qusete non vanno con i 12esimi ? */
+.col-8 {
+    width: 60%;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+/* ---------------------------------perché qusete non vanno con i 12esimi ? */
+
 
 /* #region debug*/
 .debug .header-left {
@@ -276,6 +287,7 @@ header {
 
 /* #region card */
 .card-border {
+
     border: 2px solid var(--grey);
     height: 100%;
     /* questo fa arrivare tutte le colonne allo stesso livello */
@@ -405,8 +417,50 @@ header {
 /* #endregion business-plans*/
 
 /* #region contact-us */
-.contact-us img {
-    width: (100%/12 * 2);
+.contact-us h2 {
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+.contact-us p {
+    padding: 1rem 2rem 1rem 2rem
+}
+
+.contact-us button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 2px solid;
+    padding: 0.4rem 1rem;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 /* #endregion contact-us */
+
+/* #region operation-business */
+.operation-business h2 {
+    font-size: 1.8rem;
+    padding: 2rem 0;
+}
+
+.operations-business .row {
+    justify-content: space-around;
+
+}
+
+.operation-business .small-card {
+    padding: 1rem;
+    width: 300px;
+    /* hanno una misura fissa cosí se il viewport é largo si allineano*/
+}
+
+.operation-business h3 {
+    padding: 1rem 0;
+}
+
+/* #endregion operation-business */
+
+/* #region many-teams */
+
+
+
+/* #endregion many-teams */
