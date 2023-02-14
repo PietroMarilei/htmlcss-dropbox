@@ -269,17 +269,26 @@ header {
 }
 
 /* #region card */
+.card {
+    border: 2px solid var(--grey);
+    height: 100%;
+    /* questo fa arrivare tutte le colonne allo stesso livello */
+
+
+}
 
 .card-head {
     justify-content: center;
-    border: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
     padding: 0.5rem 0;
 }
 
 .card-body {
     justify-content: center;
-    border: 2px solid var(--grey);
-    border-top: 0px;
+
+
+
+
 }
 
 .card-container {
@@ -292,6 +301,7 @@ header {
     padding: 2rem 0;
 }
 
+/* #region plan details */
 .plan-price h4 {
     padding: 2rem 0 0.5rem 0;
 }
@@ -356,6 +366,16 @@ header {
     margin-left: calc(var(--icon-space) * -1);
     width: var(--icon-space);
     /* grazie stack overflow */
+}
+
+.plan-resume li:last-child {
+    padding-left: var(--icon-space);
+    padding-bottom: 3rem;
+}
+
+/* #endregion plan details */
+.col-12 p {
+    margin-top: 3rem;
 }
 
 /* #endregion card */
