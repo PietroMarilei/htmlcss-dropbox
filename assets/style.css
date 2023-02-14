@@ -592,3 +592,33 @@ header {
 }
 
 /* #endregion bring */
+
+/* #region FAQ */
+.FAQ {
+    padding: 4rem 0;
+
+}
+
+.FAQ hr {
+    border: 0px;
+    border-top: 2px solid var(--grey);
+    margin: 1.5rem 0;
+}
+
+.question {
+    justify-content: space-between;
+}
+
+.question i {
+    padding-right: 2rem;
+}
+
+/* #endregion FAQ */
+
+/* #region footer */
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* #endregion footer */
