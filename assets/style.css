@@ -35,6 +35,10 @@ a {
     --yellow: #ffd830;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: small;
@@ -94,109 +98,30 @@ img {
 /* ---------------------------------perché qusete non vanno con i 12esimi ? */
 
 
-/* #region debug*/
-.debug .header-left {
-    background-color: orange;
-    border: 2px dotted;
-    width: 50%;
-    height: 50px;
-}
-
-.debug .header-right {
-    background-color: orange;
-    border: 2px dotted;
-    width: 50%;
-    height: 50px;
-}
-
-/* --------------------------------------------- */
-.debug .jumbotron {
-    background-color: var(--light-blue);
-    border: 2px dotted;
-    width: 100%;
-    height: 770px
-}
-
-.debug .col-4 {
-    background-color: #ff1c1c;
-    border: 2px dotted;
-    width: calc(100% / 12 * 4);
-    height: 770px
-}
-
-.debug .col-12 {
-    background-color: #ff1ce8;
-    border: 2px dotted;
-    height: 480px
-}
-
-.debug .small-card {
-    background-color: #f7ff1c;
-    border: 2px dotted;
-    width: calc(100% / 12 * 4);
-    /* ----------------------------------------con questa misura non vanno a capo  se allarga il viewport*/
-    height: 580px;
-
-}
-
-.debug .many-teams {
-    background-color: #491cff;
-    border: 2px dotted;
-    ;
-    height: 480px
-}
-
-.debug .partnerships {
-    background-color: #ff1c1c;
-    border: 2px dotted;
-    ;
-    height: 480px
-}
-
-.debug .bring {
-    background-color: #0093ce;
-    border: 2px dotted;
-    height: 250px
-}
-
-.debug .FAQ {
-    background-color: #19cca5;
-    border: 2px dotted;
-    height: 250px
-}
-
-.debug footer {
-    background-color: black;
-    height: 480px;
-}
-
-.debug .footer-col {
-    background-color: #b4d0e7;
-    border: 2px dotted;
-    width: calc(100% / 5);
-    height: 250px;
-}
-
-/* #endregion debug*/
-
 /* #region header*/
-.header-left ul {
-    align-items: center;
-    margin: -5px;
-    /* trick per allineare, meglio margin che position*/
-}
-
-.header-left li {
-    padding: 1rem;
-    font-size: small;
-}
-
-/* ---------------------------------------- header left */
 header {
     justify-content: space-between;
     background-color: var(--white);
     position: fixed;
     width: 100%;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+/* ---------------------------------------- header left */
+#header-logo {
+    margin: -5px;
+    object-fit: contain;
+}
+
+.header-left ul {
+    align-items: center;
+}
+
+.header-left li {
+    padding: 1rem;
+    font-size: small;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 .header-right ul {
@@ -206,12 +131,18 @@ header {
 .header-right li {
     padding: 1rem;
     font-size: small;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 #start-btn {
     background-color: var(--blue);
     color: var(--white);
     padding: 0.4rem 1rem;
+}
+
+/* ------------------------------------------hover rules header */
+header li:hover {
+    border-bottom: 2px solid rgb(123, 123, 123);
 }
 
 /* #endregion header*/
@@ -251,7 +182,8 @@ header {
 }
 
 .jumbo-text i {
-    margin: 2rem 0 1rem 0;
+    color: var(--blue);
+    margin: 2rem 0 2rem 0;
 }
 
 
@@ -444,6 +376,10 @@ header {
 /* #endregion operation-business */
 
 /* #region many-teams */
+.many-teams {
+    padding-bottom: 2rem;
+}
+
 .many-teams h2 {
     font-size: 26px;
     padding: 2rem 0;
@@ -452,6 +388,7 @@ header {
 .many-teams a {
     text-decoration: underline;
     color: blue;
+
 }
 
 /* #endregion many-teams */
