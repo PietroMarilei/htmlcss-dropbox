@@ -601,8 +601,9 @@ header {
 }
 
 .answear {
-    max-height: 0px;
+    height: 0;
     opacity: 0;
+    transition: all 1s;
 }
 
 .answear p {
@@ -617,16 +618,13 @@ header {
 /* -----------------------------------FAQ hover rules */
 .question-ans {
     padding: 1.5rem 0;
-    transition: all 3s ease-in;
+    transition: all 0.5s;
 }
 
 /* ----------------------------------------------------------perché non funziona la transition ? */
-.question-ans:hover {
-    max-height: 3000px;
-}
 
 .question-ans:hover .answear {
-    max-height: 3000px;
+    height: 90px;
     opacity: 100%;
 }
 
