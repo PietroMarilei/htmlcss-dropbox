@@ -207,7 +207,6 @@ header li:hover {
     border: 2px solid var(--grey);
     min-height: 100%;
     /* questo fa arrivare tutte le colonne allo stesso livello non sono sicuro del perché. Peró lo ha fatto anche Fabio*/
-
 }
 
 .card-head {
@@ -304,9 +303,11 @@ header li:hover {
 }
 
 /* #endregion plan details */
+
 /* #region -------------------large card */
 .card-large {
     margin-top: 3rem;
+    min-width: calc(100vw - 60%);
 }
 
 .plan-title {
