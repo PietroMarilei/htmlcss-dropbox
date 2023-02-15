@@ -88,11 +88,11 @@ img {
 
 /* ---------------------------------perché qusete non vanno con i 12esimi ? */
 .col-8 {
-    width: 60%;
+    width: calc(100% / 12 * 8);
 }
 
 .col-4 {
-    width: 40%;
+    width: calc(100% / 12 * 4);
 }
 
 /* ---------------------------------perché qusete non vanno con i 12esimi ? */
@@ -307,7 +307,7 @@ header li:hover {
 /* #region -------------------large card */
 .card-large {
     margin-top: 3rem;
-    min-width: calc(100vw - 60%);
+
 }
 
 .plan-title {
@@ -334,6 +334,10 @@ header li:hover {
 /* #endregion business-plans*/
 
 /* #region contact-us */
+.contact-us {
+    padding-top: 5rem;
+}
+
 .contact-us h2 {
     padding: 3rem 2rem 1rem 2rem;
 }
