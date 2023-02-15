@@ -181,8 +181,9 @@ img {
 
 /* #region header*/
 .header-left ul {
-    justify-content: ;
     align-items: center;
+    margin: -5px;
+    /* trick per allineare, meglio margin che position*/
 }
 
 .header-left li {
@@ -196,8 +197,6 @@ header {
     background-color: var(--white);
     position: fixed;
     width: 100%;
-    height: 50px;
-    /* ----------------------------------------------------------------------------------c'é uno strano margine sopra  */
 }
 
 .header-right ul {
@@ -239,8 +238,7 @@ header {
 }
 
 .jumbo-text img {
-    position: relative;
-    z-index: 1;
+    margin-bottom: -100px;
 }
 
 .jumbo-text button {
@@ -254,27 +252,14 @@ header {
 
 .jumbo-text i {
     margin: 2rem 0 1rem 0;
-    position: relative;
-    z-index: 1;
-
 }
 
-/* ---------------------------------------------------barra bianca sotto img jumbo probabilmente basta spostare la section sopra in giú con position abs*/
-#white-row {
-    background-color: var(--white);
-    border: 2px dotted;
-    width: 100%;
-    height: 100px;
-    position: relative;
-    top: -50px;
-    left: 0;
-}
 
 /* #endregion jumbotron*/
 
 /* #region business-plans*/
 .business-plans h2 {
-    padding: 0 0 2.5rem 0;
+    padding: 110px 0 2.5rem 0;
 }
 
 .business-plans label {
@@ -287,10 +272,9 @@ header {
 
 /* #region card */
 .card-border {
-
     border: 2px solid var(--grey);
-    height: 100%;
-    /* questo fa arrivare tutte le colonne allo stesso livello */
+    min-height: 100%;
+    /* questo fa arrivare tutte le colonne allo stesso livello non sono sicuro del perché. Peró lo ha fatto anche Fabio*/
 
 }
 
@@ -602,7 +586,6 @@ header {
 .FAQ hr {
     border: 0px;
     border-top: 2px solid var(--grey);
-    margin: 1.5rem 0;
 }
 
 .question {
@@ -611,6 +594,48 @@ header {
 
 .question i {
     padding-right: 2rem;
+}
+
+.question #caret-up {
+    display: none;
+}
+
+.answear {
+    max-height: 0px;
+    opacity: 0;
+}
+
+.answear p {
+    padding: 1rem 0;
+}
+
+.answear a {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+/* -----------------------------------FAQ hover rules */
+.question-ans {
+    padding: 1.5rem 0;
+    transition: all 3s ease-in;
+}
+
+/* ----------------------------------------------------------perché non funziona la transition ? */
+.question-ans:hover {
+    max-height: 3000px;
+}
+
+.question-ans:hover .answear {
+    max-height: 3000px;
+    opacity: 100%;
+}
+
+.question-ans:hover #caret-down {
+    display: none;
+}
+
+.question-ans:hover #caret-up {
+    display: block;
 }
 
 /* #endregion FAQ */
